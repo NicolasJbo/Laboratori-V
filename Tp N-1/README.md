@@ -3,6 +3,8 @@ El sistema utilizado en el Tp a la hora de competir se basa en agregarles un lim
 En caso de haber un Empate ganaria el Vikingo porque es el Favorito del creador del programa.....mejor dicho porque la taberna  fue contruida por un grupo de Vikingos. 
 
 ---------------------------------------------Preguntas---------------------------------------------
+
+
 1)¿ Que es Maven ?
 
 Maven es una herramienta de línea de comandos, sin interface gráfica que nos ayuda a crear los directorios de nuestro proyecto y con las tareas habituales que se realizan en él, como compilado, generar jar, documentación, distribuir, dependencias con otros jar, etc.
