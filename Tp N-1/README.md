@@ -1,6 +1,6 @@
 # Laboratori-V
 El sistema utilizado en el Tp a la hora de competir se basa en agregarles un limite random al vikingo y al espartano(cada uno se le aplica su respectiva "habilidades" ) .Cuando uno de ellos llega a 0 tiene que ir a orinar ,perdiendo el combate.
-En caso de haber un Empate ganaria el Vikingo porque es el Favorito del creador del programa.....mejor dicho porque la taberna  fue contruida por un grupo de Vikingos. 
+En caso de haber un Empate ganaria el Vikingo porque es el Favorito del creador del programa.....mejor dicho porque la taberna  fue construida por un grupo de Vikingos. 
 
 ---------------------------------------------Preguntas---------------------------------------------
 
