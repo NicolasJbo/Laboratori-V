@@ -24,9 +24,13 @@ La diferencia es que los Archetype son plantillas de proyectos Maven destinadad 
 Un Goal es un comando que recibe Maven como paramtero para hacer algo.
 
 clean: limpia todas las clases compiladas del proyecto.
+
 package: empaqueta el proyecto (si es un proyecto java simple, genera un jar, si es un proyecto web, un war, etc…).
+
 install: instala el artefacto en el repositorio local.
+
 compile: compila el proyecto.
+
 
 
 5)Explique los siguientes Scopes: compile, provide, runtime, test, system.
