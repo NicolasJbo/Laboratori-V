@@ -17,6 +17,9 @@ public class Espartano extends Humano implements IHabilidadEspecial {
 
     }
 
+    public Espartano() {
+    }
+
     public void activarHabilidadEspecial() {
 
         int limiteViejo = this.limiteE;
@@ -36,4 +39,11 @@ public class Espartano extends Humano implements IHabilidadEspecial {
     }
     public int getLimiteE(){return  this.limiteE;}
 
+    @Override
+    public String toString() {
+        return "Espartano{" +
+                "bebedorProfesional=" + bebedorProfesional +
+                ", limiteE=" + limiteE +
+                '}';
+    }
 }

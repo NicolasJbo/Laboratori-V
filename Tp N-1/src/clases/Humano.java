@@ -18,6 +18,10 @@ public abstract class Humano  {
         this.orinar = orinar;
     }
 
+    public Humano( ) {
+
+    }
+
     public String getNombre() {
         return nombre;
     }

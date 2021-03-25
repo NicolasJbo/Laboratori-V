@@ -11,10 +11,22 @@ public class Vikingo extends Humano implements IHabilidadEspecial {
     private Integer toleranciaExtra;
     private Integer limiteV;
 
+    public Vikingo() {
+    }
+
     public Vikingo(String nombre, Integer edad, Integer peso, IBeber beber, IOrinar orinar, Integer toleranciaExtra) {
         super(nombre, edad, peso, beber, orinar);
         this.toleranciaExtra = toleranciaExtra;
         this.limiteV = new Random().nextInt(15 - 1)+1; //genero el limite de bebida del Vikingo
+
+    }
+
+    @Override
+    public String toString() {
+        return "Vikingo{" +
+                "toleranciaExtra=" + toleranciaExtra +
+                ", limiteV=" + limiteV +
+                '}';
     }
 
     public void activarHabilidadEspecial() {
