@@ -50,13 +50,23 @@ public class PersonaService {
 
         List<Jugador>jList = representante.getJugadorList();
 
-        float acum=0;
+        float acumD=0;
+        float acumE=0;
         for(Jugador j : jList){
-            acum =+ j.getCurrency().getMonto();
-
+            if(j.getCurrency().getCurrency().equalsIgnoreCase("dolar")){
+                acumD =+ j.getCurrency().getMonto();
+            }
+            if(j.getCurrency().getCurrency().equalsIgnoreCase("euro")){
+                acumE =+ j.getCurrency().getMonto();
+            }
         }
-        representante.setMontoTotal(acum);
-        representante.setPesoDeLaBoveda(acum);
+        //el doldar esta 10 pesos y 1 euro =20pesos
+        float total= (acumD*10)+(acumE*20);
+        representante.setMontoTotal(total);
+        
+        float peso= total/1000;
+        //toda la bobeda esta compuesta por billetes de 1000pesos
+        representante.setPesoDeLaBoveda(peso);
 
 
         return representante;

@@ -19,7 +19,8 @@ public class Jugador extends Persona{
     private int goles;
     private int minutosJugados;
 
-
+    @OneToOne
+    @JoinColumn(name = "currency_id")
     private Currency currency;
     private String fechadeNacimiento;
 
