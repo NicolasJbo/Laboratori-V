@@ -63,7 +63,7 @@ public class PersonaService {
         //el doldar esta 10 pesos y 1 euro =20pesos
         float total= (acumD*10)+(acumE*20);
         representante.setMontoTotal(total);
-        
+
         float peso= total/1000;
         //toda la bobeda esta compuesta por billetes de 1000pesos
         representante.setPesoDeLaBoveda(peso);

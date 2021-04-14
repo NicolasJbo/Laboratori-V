@@ -6,10 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Data
 @NoArgsConstructor
@@ -19,6 +16,7 @@ import javax.persistence.Id;
         @JsonSubTypes.Type(value = Jugador.class , name = "JUGADOR"),
         @JsonSubTypes.Type(value = Representante.class , name = "REPRESENTANTE")
 })
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @Entity
 public abstract class Persona {
     @Id
