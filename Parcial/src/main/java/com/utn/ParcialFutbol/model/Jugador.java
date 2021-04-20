@@ -1,31 +1,29 @@
-package utn.Parcial.Model;
+package com.utn.ParcialFutbol.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-
+import java.util.List;
 
 @Data
 @NoArgsConstructor
 @Entity
 public class Jugador extends Persona{
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
 
     private float peso;
     private float altura;
     private int goles;
     private int minutosJugados;
+    private String date;
 
     @OneToOne
-    @JoinColumn(name = "currency_id")
-    private Currency currency;
-    private String fechadeNacimiento;
+    @JoinColumn(name="currency_id")
+    private  Currency currency;
+
 
     @Override
-    public TypePersona typePersona() {
-        return TypePersona.JUGADOR;
+    public TypePerson typePerson() {
+        return TypePerson.JUGADOR;
     }
 }

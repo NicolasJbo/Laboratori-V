@@ -1,13 +1,13 @@
-package utn.Parcial;
+package com.utn.ParcialFutbol;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ParcialApplication {
+public class ParcialFutbolApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ParcialApplication.class, args);
+		SpringApplication.run(ParcialFutbolApplication.class, args);
 	}
 
 }

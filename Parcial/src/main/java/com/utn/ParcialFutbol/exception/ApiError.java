@@ -1,4 +1,4 @@
-package utn.Parcial.Exception;
+package com.utn.ParcialFutbol.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

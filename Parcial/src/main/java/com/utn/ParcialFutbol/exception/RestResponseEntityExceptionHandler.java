@@ -1,4 +1,5 @@
-package utn.Parcial.Exception;
+package com.utn.ParcialFutbol.exception;
+
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
