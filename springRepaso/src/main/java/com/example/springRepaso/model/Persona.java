@@ -34,6 +34,9 @@ public class Persona {
     @JoinColumn(name = "vehiculo_id")
     List<Vehiculo> vehiculosList;
 
+    //----------OCULATAR INFORMACION----------
+
+    private String direccion;
 
 
 }
