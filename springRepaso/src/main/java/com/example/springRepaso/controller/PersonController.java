@@ -5,6 +5,7 @@ import com.example.springRepaso.model.Persona;
 import com.example.springRepaso.model.PostResponse;
 import com.example.springRepaso.model.Vehiculo;
 import com.example.springRepaso.model.dto.PersonaDto;
+import com.example.springRepaso.model.projection.PersonProjection;
 import com.example.springRepaso.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.ConversionService;
@@ -34,6 +35,11 @@ public class PersonController {
     public PersonaDto getPersonById(@PathVariable Integer personId){
 
         return  conversionService.convert(personService.getById(personId), PersonaDto.class);
+    }
+    @GetMapping("/{personId}/projection}")
+    public PersonProjection getPersonByIdProjection(@PathVariable String personId){
+
+        return  personService.getByIdProjection(personId);
     }
 
     @PostMapping

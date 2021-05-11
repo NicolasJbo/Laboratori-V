@@ -5,6 +5,7 @@ import com.example.springRepaso.model.PaginationResponse;
 import com.example.springRepaso.model.Persona;
 import com.example.springRepaso.model.PostResponse;
 import com.example.springRepaso.model.Vehiculo;
+import com.example.springRepaso.model.projection.PersonProjection;
 import com.example.springRepaso.repository.PersonRepository;
 import com.example.springRepaso.repository.VehiculoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -75,5 +76,11 @@ public class PersonService {
     public List<Vehiculo> getVehivulosByPersonId(Integer personId) {
         Persona user = this.getById(personId);
         return  user.getVehiculosList();
+    }
+
+    public PersonProjection getByIdProjection(String name) {
+        return personRepository.findByName2(name);
+
+
     }
 }
